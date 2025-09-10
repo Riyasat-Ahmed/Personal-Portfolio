@@ -1,7 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
-import { motion } from "framer-motion";
 
 // Components
 import AnimatedBackground from "./components/AnimatedBackground";

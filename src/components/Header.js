@@ -14,11 +14,11 @@ const Header = () => {
           Riyasat Ahmed
         </Link>
         <nav>
-          <Link to="#/">Home</Link>
-          <Link to="#/experience">Experience</Link>
-          <Link to="#/skills">Skills</Link>
-          <Link to="#/projects">Projects</Link>
-          <Link to="#/contact">Contact</Link>
+          <Link to="/">Home</Link>
+          <Link to="/experience">Experience</Link>
+          <Link to="/skills">Skills</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/contact">Contact</Link>
         </nav>
       </div>
     </motion.header>
