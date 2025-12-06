@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "emailjs-com";
 
+// icons / assets
+import linkedInLogo from "../assets/output-onlinepngtools.png";
+import resumeLogo from "../assets/cvpurple-removebg-preview.png";
+import resumePdf from "../assets/Riyasat Ahmed .docx.pdf"; // make sure this path & name match
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     from_name: "",
@@ -26,12 +31,12 @@ const Contact = () => {
     setError(null);
     setSuccess(null);
 
-    // replace with your actual IDs from EmailJS
     const serviceID = "service_73ra40o";
     const templateID = "template_ym0fi8o";
     const publicKey = "17abwzWb-Sh_MkAJw";
 
-    emailjs.send(serviceID, templateID, formData, publicKey)
+    emailjs
+      .send(serviceID, templateID, formData, publicKey)
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         setSuccess(`Thanks ${formData.from_name}, your message has been sent!`);
@@ -56,6 +61,33 @@ const Contact = () => {
       >
         Get in Touch
       </motion.h3>
+
+      {/* LinkedIn + Resume logos row */}
+      <div className="contact-links">
+        <a
+          href="https://www.linkedin.com/in/riyasat-ahmed-81b31a316/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={linkedInLogo}
+            alt="LinkedIn"
+            className="contact-icon"
+          />
+        </a>
+
+        <a
+          href={resumePdf}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={resumeLogo}
+            alt="Resume"
+            className="contact-icon"
+          />
+        </a>
+      </div>
 
       <motion.div
         className="contact"
