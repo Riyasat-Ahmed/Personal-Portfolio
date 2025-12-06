@@ -3,6 +3,14 @@ import { motion } from "framer-motion";
 import websitePic from "../assets/websitePic.png"; // your image
 
 const Hero = () => {
+  const handleLinkedInClick = () => {
+    window.open(
+      "https://www.linkedin.com/in/riyasat-ahmed-81b31a316/",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <motion.section
       className="hero"
@@ -19,7 +27,7 @@ const Hero = () => {
       </motion.h2>
 
       <div className="hero-content">
-        {/* Left: Self portrait */}
+        {/* Left: Self portrait (clickable) */}
         <motion.img
           src={websitePic}
           alt="Riyasat Ahmed"
@@ -27,6 +35,8 @@ const Hero = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
+          onClick={handleLinkedInClick}
+          style={{ cursor: "pointer" }}
         />
 
         {/* Right: Text block (intro + degree stacked vertically) */}
