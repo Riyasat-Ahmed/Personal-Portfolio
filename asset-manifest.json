@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ec67159.css",
-    "main.js": "/static/js/main.749a8756.js",
+    "main.css": "/static/css/main.a7512687.css",
+    "main.js": "/static/js/main.d1020a85.js",
     "static/js/453.6d3c9503.chunk.js": "/static/js/453.6d3c9503.chunk.js",
     "static/media/Riyasat Ahmed .docx.pdf": "/static/media/Riyasat Ahmed .docx.42baa76b913eac37dfaf.pdf",
     "static/media/riyasat-portrait.png": "/static/media/riyasat-portrait.93b48500d208fb68f279.png",
     "static/media/grey_cv_background-removebg-preview.png": "/static/media/grey_cv_background-removebg-preview.238533a94cfe79a5947d.png",
     "static/media/greylinkedin-removebg-preview.png": "/static/media/greylinkedin-removebg-preview.efcfece41a2568f9d958.png",
     "index.html": "/index.html",
-    "main.4ec67159.css.map": "/static/css/main.4ec67159.css.map",
-    "main.749a8756.js.map": "/static/js/main.749a8756.js.map",
+    "main.a7512687.css.map": "/static/css/main.a7512687.css.map",
+    "main.d1020a85.js.map": "/static/js/main.d1020a85.js.map",
     "453.6d3c9503.chunk.js.map": "/static/js/453.6d3c9503.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ec67159.css",
-    "static/js/main.749a8756.js"
+    "static/css/main.a7512687.css",
+    "static/js/main.d1020a85.js"
   ]
 }
